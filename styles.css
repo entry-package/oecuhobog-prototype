@@ -980,3 +980,62 @@ a {
     width: 100%;
   }
 }
+
+/* --- 印刷・PDF保存時のページ区切り調整 --- */
+@media print {
+  .site-header {
+    position: static;
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  .meeting-section,
+  .school-news-section,
+  .alumni-section,
+  .support-section,
+  .resources-section,
+  .about-section,
+  .update-section,
+  .contact-section {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .meeting-main,
+  .meeting-side,
+  .news-item,
+  .digest-panel,
+  .digest-side,
+  .alumni-interview,
+  .alumni-card,
+  .support-card,
+  .about-point,
+  .update-panel,
+  .contact-panel,
+  .resource-link {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .assoc-news-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .school-news-grid,
+  .alumni-grid,
+  .support-grid,
+  .about-grid {
+    display: block;
+  }
+
+  .school-news-grid > *,
+  .alumni-grid > *,
+  .support-grid > * {
+    margin-bottom: 18px;
+  }
+}
