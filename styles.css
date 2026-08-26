@@ -460,6 +460,326 @@ a {
   margin-bottom: 0;
 }
 
+/* --- 母校の近況 --- */
+.school-news-section {
+  border-top: 1px solid var(--line);
+}
+
+.digest-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--white);
+  font-size: 0.68rem;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.school-news-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.8fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.digest-panel,
+.digest-side {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: clamp(22px, 3.5vw, 32px);
+}
+
+.digest-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px 20px;
+}
+
+.digest-panel-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.digest-source {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--green);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+.digest-list {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.digest-list li {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.digest-list li:first-child {
+  border-top: none;
+}
+
+.digest-list time {
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 0.86rem;
+}
+
+.digest-list p {
+  margin: 0;
+}
+
+.digest-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.digest-side h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.digest-side p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.instagram-placeholder {
+  margin-top: 18px;
+  min-height: 220px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.assoc-news-block {
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.assoc-news-block > h3 {
+  margin: 0 0 20px;
+  font-size: 1.3rem;
+}
+
+/* --- 卒業生の広場 --- */
+.alumni-section {
+  border-top: 1px solid var(--line);
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.8fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.alumni-interview {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: clamp(22px, 3.5vw, 32px);
+}
+
+.alumni-eyebrow {
+  margin: 0 0 16px;
+  color: var(--gold);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.alumni-interview-body {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.alumni-photo {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.alumni-interview-body h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.alumni-quote {
+  margin: 14px 0 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.alumni-side {
+  display: grid;
+  gap: 18px;
+}
+
+.alumni-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.alumni-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.alumni-card p {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.text-link {
+  color: var(--green);
+  font-weight: 800;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* --- 母校を支える --- */
+.support-section {
+  border-top: 1px solid var(--line);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.support-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.support-card.featured {
+  border-color: var(--green);
+  border-width: 2px;
+  background: #f4faf6;
+}
+
+.support-tag {
+  margin: 0 0 10px;
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.support-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+}
+
+.support-card p {
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.support-meta {
+  font-size: 0.86rem;
+}
+
+.support-card .button,
+.support-card .text-link {
+  margin-top: auto;
+}
+
+.support-footnote {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.support-footnote p {
+  margin: 0 0 8px;
+}
+
+.support-track {
+  font-size: 0.86rem;
+}
+
+/* --- 住所変更・登録 --- */
+.update-section {
+  padding-top: 0;
+}
+
+.update-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: clamp(26px, 5vw, 40px);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.update-panel p {
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+
+.update-actions {
+  text-align: right;
+}
+
+.update-note {
+  margin-top: 10px !important;
+  font-size: 0.82rem;
+}
+
+.button.disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+.button.disabled small {
+  display: block;
+  font-weight: 600;
+  font-size: 0.72em;
+}
+
 .contact-section {
   padding-top: 0;
 }
@@ -517,18 +837,30 @@ a {
 
   .meeting-grid,
   .resources-section,
-  .contact-panel {
+  .contact-panel,
+  .school-news-grid,
+  .alumni-grid,
+  .update-panel {
     grid-template-columns: 1fr;
   }
 
   .meeting-facts,
   .news-list,
-  .about-grid {
+  .about-grid,
+  .support-grid {
     grid-template-columns: 1fr;
   }
 
   .contact-actions {
     justify-content: flex-start;
+  }
+
+  .update-actions {
+    text-align: left;
+  }
+
+  .alumni-interview-body {
+    grid-template-columns: 96px 1fr;
   }
 }
 
@@ -599,5 +931,27 @@ a {
 
   .photo-strip {
     grid-template-columns: 1fr;
+  }
+
+  .digest-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .alumni-interview-body {
+    grid-template-columns: 1fr;
+  }
+
+  .alumni-photo {
+    width: 96px;
+    height: 96px;
+  }
+
+  .update-actions {
+    text-align: left;
+  }
+
+  .update-actions .button {
+    width: 100%;
   }
 }
