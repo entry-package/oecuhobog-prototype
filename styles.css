@@ -559,19 +559,43 @@ a {
   margin: 0;
 }
 
-.instagram-placeholder {
+.insta-follow {
   margin-top: 18px;
-  min-height: 220px;
-  border: 1px dashed var(--line);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
-  display: flex;
+}
+
+.insta-icon {
+  flex: 0 0 auto;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: var(--muted);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+.insta-handle {
+  margin: 0;
   font-weight: 800;
+}
+
+.insta-desc {
+  margin: 4px 0 0;
+  color: var(--muted);
   font-size: 0.9rem;
+}
+
+.insta-cta {
+  width: 100%;
+  margin-top: 14px;
 }
 
 .assoc-news-block {
@@ -769,19 +793,20 @@ a {
   font-size: 0.82rem;
 }
 
-.button.disabled {
-  cursor: not-allowed;
-  opacity: 0.62;
-}
-
-.button.disabled small {
-  display: block;
-  font-weight: 600;
-  font-size: 0.72em;
-}
-
 .contact-section {
   padding-top: 0;
+}
+
+.contact-address {
+  margin: 12px 0 0;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.8;
+}
+
+.contact-address a {
+  color: var(--white);
+  font-weight: 800;
 }
 
 .contact-panel {
