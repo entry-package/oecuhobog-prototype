@@ -1,0 +1,26 @@
+/* Presentation fixes from the September migration review. */
+.president-greeting {
+  margin-top: 44px;
+  padding: clamp(24px, 4vw, 44px);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--green);
+  border-radius: 12px;
+}
+.president-greeting h3 { margin: 0 0 28px; color: var(--green-dark); font-size: 1.65rem; }
+.greeting-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 36px; align-items: start; }
+.greeting-portrait { width: 100%; height: auto; border-radius: 8px; }
+.greeting-body { font-size: 1rem; line-height: 2; }
+.greeting-body h4 { margin: 0 0 20px; font-size: 1.15rem; }
+.greeting-body p { margin: 0 0 1em; }
+.pinned-label { display: inline-block; margin: 0 10px 6px 0; padding: 2px 9px; color: #fff; background: var(--green-dark); border-radius: 4px; font-size: .78rem; }
+.archive-main .emblem-cover { padding: 28px; }
+.archive-main .emblem-cover img { max-height: 124px !important; }
+.review-contact-link { font-size: .95rem; line-height: 1.8; }
+.review-contact-link a, .rss-link { text-underline-offset: 4px; }
+.site-footer > .rss-link { display: inline-block; margin-top: 12px; }
+@media (max-width: 700px) {
+  .greeting-layout { grid-template-columns: 1fr; gap: 24px; }
+  .greeting-portrait { width: min(220px, 100%); }
+  .president-greeting { padding: 24px 20px; }
+}

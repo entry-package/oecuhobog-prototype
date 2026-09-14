@@ -1,0 +1,12 @@
+{
+  "baseline": "2ecf7b6",
+  "counts": {
+    "html": 121,
+    "article_bodies": 86,
+    "comments": 6,
+    "assets": 576
+  },
+  "rss_items": 86,
+  "errors": [],
+  "status": "passed"
+}
