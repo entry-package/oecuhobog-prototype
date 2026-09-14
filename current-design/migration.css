@@ -1,0 +1,9 @@
+/* Original theme and per-page styles are preserved; only runtime state is supplied here. */
+.s-blog-comment-form.expanded .s-blog-comment-form-more { display: block; }
+[data-paginated] > [hidden], .s-blog-col-foot [hidden] { display: none !important; }
+.migration-anchor { position: absolute; scroll-margin-top: 60px; }
+[role="button"], [role="link"] { cursor: pointer; }
+@media(max-width: 800px) {
+ .migration-menu-open .s-navbar-desktop-normal { display: flex !important; position: fixed !important; top: 60px !important; left: 0 !important; width: 260px !important; height: calc(100dvh - 60px) !important; overflow-y: auto; z-index: 99999; background: white; }
+ .migration-menu-open .s-navbar-desktop-normal .s-nav-inner { margin-top: 0 !important; }
+}

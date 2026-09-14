@@ -1,0 +1,36 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * brandon-grotesque:
+ *   - http://typekit.com/eulas/0000000000000000000132df
+ *   - http://typekit.com/eulas/0000000000000000000132e3
+ *   - http://typekit.com/eulas/000000000000000077359df2
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2022-11-07 03:43:56 UTC"}*/
+
+@import url('87d5f8a33b4ba3f316508b56.css');
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url('d980009bb5407b18f6e917a6.bin') format("woff2"),url('3cbaed5ae58bd9f813bc8af8.bin') format("woff"),url('d0582b94e2ea47e054c256db.bin') format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url('50e8f74918e55a01104abd81.bin') format("woff2"),url('6395765737b461c727d4fedd.bin') format("woff"),url('f0ea2c9523d8a5078429058c.bin') format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url('14510885bae181aea40ebb34.bin') format("woff2"),url('42a148c7b81fe08fe29ef493.bin') format("woff"),url('7fb0cc15f883a2ba28bcaf52.bin') format("opentype");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+.tk-brandon-grotesque { font-family: "brandon-grotesque",sans-serif; }
