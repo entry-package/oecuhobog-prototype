@@ -1,1 +1,10 @@
-{"review_date": "2026-09-10", "content_commit": "92160752fefd21356a6525579c65ffb5a66749a1", "articles": 86, "public_comments": 6, "forms_enabled": false}
+{
+  "review_date": "2026-09-14",
+  "content_commit": "92160752fefd21356a6525579c65ffb5a66749a1",
+  "articles": 86,
+  "public_comments": 6,
+  "forms_enabled": false,
+  "presentation_revision": "migration-audit-20260914",
+  "baseline_presentation_commit": "2ecf7b6",
+  "rss_items": 86
+}

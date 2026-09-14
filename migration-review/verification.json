@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "html": 121,
+    "article_bodies": 86,
+    "comments": 6,
+    "archived_bodies": 18,
+    "assets": 576,
+    "metadata": 121
+  },
+  "rss_items": 86,
+  "greeting_exact_match": true,
+  "pinned_first": true,
+  "local_http_samples": 6,
+  "errors": []
+}
