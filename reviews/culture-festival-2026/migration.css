@@ -1,0 +1,38 @@
+/* Original theme and per-page styles are preserved; only runtime state is supplied here. */
+.s-blog-comment-form.expanded .s-blog-comment-form-more { display: block; }
+[data-paginated] > [hidden], .s-blog-col-foot [hidden] { display: none !important; }
+.migration-anchor { position: absolute; scroll-margin-top: 60px; }
+[role="button"], [role="link"] { cursor: pointer; }
+/* Fit the linked school banner to its original aspect ratio without cropping. */
+#section-f_799c7922-e7b7-4e0e-8e07-5207f42be7f3 .slick-slide-item.noForeground {
+ min-height: 0;
+ background-size: contain !important;
+}
+#section-f_799c7922-e7b7-4e0e-8e07-5207f42be7f3 .slick-slide-item.noForeground > img {
+ display: block;
+ height: auto !important;
+}
+@media(max-width: 800px) {
+ .migration-menu-open .s-navbar-desktop-normal { display: flex !important; position: fixed !important; top: 60px !important; left: 0 !important; width: 260px !important; height: calc(100dvh - 60px) !important; overflow-y: auto; z-index: 99999; background: white; }
+ .migration-menu-open .s-navbar-desktop-normal .s-nav-inner { margin-top: 0 !important; }
+}
+
+.migration-contact-notice{margin:16px 0;padding:12px 16px;border:1px solid #ddd;background:#fff;color:#222;font-size:15px;line-height:1.7;text-align:left}.migration-contact-notice a{color:#005b95;text-decoration:underline;overflow-wrap:anywhere}
+
+.receiver-consent{color:#333;display:flex;gap:8px;align-items:flex-start;font-size:14px;line-height:1.7;margin-top:14px;text-align:left}.receiver-consent input{width:auto!important;min-width:18px;height:18px;margin-top:4px}.receiver-help{color:#333;font-size:14px;line-height:1.7;margin:12px 0}
+
+/* 旧フォームの重なるラベルを使わず、入力欄の外に見出しを置く。 */
+#s-content .receiver-contact{box-sizing:border-box;max-width:760px;margin:0 auto;padding:28px;background:#fff;border-radius:8px;color:#26352c;text-align:left;box-shadow:0 8px 28px #0002}
+#s-content .receiver-contact .receiver-intro{margin:0 0 22px;font-size:16px;line-height:1.7;color:#26352c}
+.receiver-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}.receiver-wide{grid-column:1/-1}
+#s-content .receiver-contact label{display:block;position:static;transform:none;width:auto;margin:0 0 7px;color:#26352c;font-size:15px;line-height:1.5;cursor:pointer;text-align:left}
+#s-content .receiver-contact label span{margin-left:6px;color:#68796b;font-size:12px}
+#s-content .receiver-contact input,#s-content .receiver-contact textarea{box-sizing:border-box;position:static;display:block;width:100%;height:auto;min-height:46px;margin:0;border:1px solid #b9c6bc;border-radius:4px;padding:11px 12px;background:#fff;color:#1e2922;font:16px/1.5 sans-serif;box-shadow:none;opacity:1;pointer-events:auto}
+#s-content .receiver-contact textarea{min-height:150px;resize:vertical}
+#s-content .receiver-contact input:focus,#s-content .receiver-contact textarea:focus{outline:3px solid #2ecc7140;outline-offset:1px;border-color:#188849}
+#s-content .receiver-contact .receiver-send{display:block;margin:24px 0 14px;padding:13px 38px;min-height:48px;border:0;border-radius:4px;background:#219653;color:#fff;font-size:17px;font-weight:700;cursor:pointer}
+#s-content .receiver-contact .receiver-send:hover{background:#187e43}#s-content .receiver-contact .receiver-send:disabled{opacity:.65;cursor:wait}
+#s-content .receiver-contact .receiver-direct{margin:0;font-size:13px;line-height:1.7;color:#56645a}#s-content .receiver-contact a{color:#187b43;text-decoration:underline}
+.receiver-status:empty{display:none!important}.receiver-status{padding:14px 16px;margin:18px 0 0!important;border-radius:5px;font-size:15px;line-height:1.8;overflow-wrap:anywhere;text-align:left;background:#eef4f0;color:#26352c}
+.receiver-status[data-state="success"]{background:#edf8f0;color:#17673a;border-left:4px solid #219653}.receiver-status[data-state="error"]{background:#fff1f0;color:#9b2c2c;border-left:4px solid #c34444}.receiver-status[data-state="warning"]{background:#fff8e6;color:#745117;border-left:4px solid #b88425}
+@media(max-width:600px){#s-content .receiver-contact{padding:22px 18px}.receiver-fields{grid-template-columns:1fr;gap:16px}#s-content .receiver-contact .receiver-send{width:100%}}
