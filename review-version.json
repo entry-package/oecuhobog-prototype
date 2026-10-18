@@ -1,10 +1,11 @@
 {
-  "review_date": "2026-09-14",
-  "content_commit": "92160752fefd21356a6525579c65ffb5a66749a1",
-  "articles": 86,
+  "review_date": "2026-10-18",
+  "articles": 88,
   "public_comments": 6,
   "forms_enabled": false,
-  "presentation_revision": "migration-audit-20260914",
+  "presentation_revision": "release-readiness-20261018",
   "baseline_presentation_commit": "2ecf7b6",
-  "rss_items": 86
+  "rss_items": 88,
+  "production_switch": "2026-12; exact date undecided",
+  "source_baseline_commit": "9eb2a89be3982703632d8c1194d54bd0c4377064"
 }
