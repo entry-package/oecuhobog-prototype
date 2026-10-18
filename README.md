@@ -26,6 +26,7 @@ python tools/build_production.py --snapshot ../live-snapshot --output ../product
 本番用スクリプトは正規の本番originでだけ起動します。確認サイトではロードしません。
 Turnstile公開設定、favicon、検索所有権確認ファイルを引き継ぎます。秘密鍵は取得しません。
 本番用canonical・OGP・RSS・sitemap・robotsを生成し、旧比較デザインや開発資料は成果物に含めません。
+トップの「同窓会の記録」は確認中だけ表示し、本番ビルドでセクションごと除外します。記事・資料の既存URLは維持します。
 アクセス解析は明示同意後に起動し、フッターから変更できます。
 
 ## 検証
