@@ -45,6 +45,7 @@ for file in a.output.rglob('*.html'):
  soup=BeautifulSoup(text,'html.parser')
  for meta in soup.select('meta[name=robots]'):meta['content']='index,follow'
  for note in soup.select('.preview-policy-note'):note.decompose()
+ for section in soup.select('[data-production-omit]'):section.decompose()
  for filename in ['form-adapter.js','receiver.js','analytics-consent.js']:
   tag=soup.new_tag('script',src='/'+filename);tag['defer']='';soup.head.append(tag)
  file.write_text(str(soup)+'\n')
